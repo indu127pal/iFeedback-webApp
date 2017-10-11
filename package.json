@@ -1,0 +1,31 @@
+{
+  "name": "fw-feedback",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "classnames": "^2.2.5",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^7.0.4",
+    "redux-saga": "^0.15.6",
+    "tachyons": "^4.8.1",
+    "tachyons-cli": "^1.0.11"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.x"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "css": "tachyons src/css/app.css > src/index.css",
+    "prestart": "npm run css",
+    "prebuild": "npm run css"
+  },
+  "homepage": "."
+}

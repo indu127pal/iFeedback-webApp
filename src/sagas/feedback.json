@@ -1,0 +1,135 @@
+{
+  "feedback": 
+  [
+    {
+      "status":true,
+      "customer":{
+         "phone":"9810962423",
+         "name":"sahnwaj  k"
+      },
+      "code":"EASYDAY_EXPERIENCE_FEEDBACK",
+      "name":"Easyday Experience Feedback",
+      "businessId":1,
+      "description":"Easyday Experience Feedback",
+      "categoryId":1,
+      "id":5,
+      "pages":[
+         {
+            "pageId":8,
+            "final": false,
+            "start": true,
+            "questions":[
+               {
+                  "questionType":"RATING",
+                  "code":"TI",
+                  "mandatory":true,
+                  "name":"Rate your last visit to  Easyday",
+                  "choices":[
+                     {
+                        "name":"1",
+                        "imageUrl":"/assets/images/feed_1.jpg",
+                        "value":"1",
+                        "type": "radio",
+                        "id":17,
+                        "gotoPageId":9,
+                        "description":"Bad"
+                     },
+                     {
+                        "name":"2",
+                        "imageUrl":"/assets/images/feed_2.jpg",
+                        "type": "radio",
+                        "value":"2",
+                        "id":18,
+                        "gotoPageId":9,
+                        "description":"Average"
+                     },
+                     {
+                        "id":19,
+                        "type": "radio",
+                        "name":"3",
+                        "imageUrl":"/assets/images/feed_3.jpg",
+                        "description":"OK",
+                        "value":"3",
+                        "gotoPageId":null
+                     },
+                     {
+                        "name":"4",
+                        "type": "radio",
+                        "imageUrl":"/assets/images/feed_4.jpg",
+                        "value":"4",
+                        "id":20,
+                        "gotoPageId":null,
+                        "description":"Good"
+                     },
+                     {
+                        "name":"5",
+                        "type": "radio",
+                        "imageUrl":"/assets/images/feed_5.jpg",
+                        "value":"5",
+                        "id":21,
+                        "gotoPageId":null,
+                        "description":"Excellent"
+                     }
+                  ],
+                  "header":"Easyday",
+                  "id":12,
+                  "displayOrder":1,
+                  "description":"On a scale of 1-5, how was your last visit? (1-Bad, 5-Excellent)"
+               }
+            ]
+         },
+         {
+            "pageId":9,
+            "final": true,
+            "questions":[
+               {
+                  "questionType":"RADIO",
+                  "code":"TI",
+                  "mandatory":true,
+                  "name":"Reason for bad experience",
+                  "choices":[
+                     {
+                        "name":"Ambience",
+                        "imageUrl":null,
+                        "value":"Ambience",
+                        "id":22,
+                        "gotoPageId":null,
+                        "description":"Store Ambience"
+                     },
+                     {
+                        "name":"Item Availability",
+                        "imageUrl":null,
+                        "value":"Item Availability",
+                        "id":23,
+                        "gotoPageId":null,
+                        "description":"Items not available"
+                     },
+                     {
+                        "name":"Item Quality",
+                        "imageUrl":null,
+                        "value":"Item Quality",
+                        "id":24,
+                        "gotoPageId":null,
+                        "description":"Items are not of good quality"
+                     },
+                     {
+                        "name":"Staff",
+                        "imageUrl":null,
+                        "value":"Staff",
+                        "id":25,
+                        "gotoPageId":null,
+                        "description":"Staff behaviour was not Good"
+                     }
+                  ],
+                  "header":"Easyday",
+                  "id":13,
+                  "displayOrder":1,
+                  "description":"What was the main reason for your bad experience?"
+               }
+            ]
+         }
+      ],
+      "instructions":null
+   }
+    ]
+}
