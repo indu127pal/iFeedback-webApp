@@ -41,23 +41,23 @@ case constants.FETCH_FEEDBACK_SUCCESS:
       loading: false,
     };
   case constants.SET_ANSWER:
-    // console.log(state.currentAnswers)
+    console.log(state.currentAnswers)
     let a = state.currentAnswers.find( x => x.questionId === action.payload.questionId);
     a.value = action.payload.value;
-    // console.log(state.currentAnswers)
+    console.log(state.currentAnswers)
     return {
       ...state,
       currentAnswers: state.currentAnswers
     }
   case constants.GET_NEXT_PAGE:
-    // console.log(state.currentPage)
-    // console.log(state.currentAnswers)
+    console.log(state.currentPage)
+    console.log(state.currentAnswers)
     let form_values = action.payload.form_values
     let updatedAnswers = updateAnswers(state.answers, form_values, state.currentPage.questions)    
     let newPage = getNextPage(state.feedback, state.currentPage, updatedAnswers)
     let newAnswers = getCurrentAnswers(newPage)
-    // console.log(newPage)
-    // console.log(newAnswers)
+    console.log(newPage)
+    console.log(newAnswers)
     return {
       ...state,
       feedback: state.feedback,

@@ -1,0 +1,256 @@
+{
+    "feedback": 
+    [
+      {
+        "id": 1,
+        "name": "Customer Feedback",
+        "code": "CUSTFB011",
+        "status": "Active",
+        "instructions": "Please complete the rating for the last transaction at Store 010010",
+        "customer": {
+          "fullName": "Vikram Goel",
+          "mobile": ""
+        },
+        "pages": [
+          {
+            "id": 101, "greeting": "Dear", "name": "Page 1", "header": "Page 1 Header", "text": "Page 1 Text", "footer": "Page 1 Footer", "final": false,
+            "start": true,
+            "questions": [
+              { "id": 301, 
+                "name": "Thank you for visiting EasyDay. Your valuable feedback constantly help us improve our delivery and provide you with the best possible service on your next visit. We promise it won't take longer. Let's get started...",
+                "header": "How do you rate your experience today on the scale of 1 to 5",
+                "noteText": "(1 being very poor and 5 being very good)",
+                "questionType": "RATING",
+                "displayOrder": 1,
+                "choices": [
+                  { "id": 201, "type": "radio", "name": "1",  "image": "/assets/images/feed_1.jpg", "value": "1" },
+                  { "id": 202, "type": "radio", "name": "2",  "image": "/assets/images/feed_2.jpg", "value": "2" },
+                  { "id": 203, "type": "radio", "name": "3",  "image": "/assets/images/feed_3.jpg", "value": "3" },
+                  { "id": 204, "type": "radio", "name": "4",  "image": "/assets/images/feed_4.jpg", "value": "4" },
+                  { "id": 205, "type": "radio", "name": "5",  "image": "/assets/images/feed_5.jpg", "value": "5" }
+                ],
+                "links": [
+                  { "id": 501, "value": "1", "linkedPage": 102},
+                  { "id": 502, "value": "2", "linkedPage": 102},
+                  { "id": 503, "value": "3", "linkedPage": 102},
+                  { "id": 504, "value": "4", "linkedPage": 102},
+                  { "id": 505, "value": "5", "linkedPage": 110}
+                ]
+              }
+            ]
+          },
+          {
+            "id": 102, "name": "Page 2", "header": "Page 2 Header", "text": "Page 2 Text", "footer": "Page 2 Footer", "final": false,
+            "questions": [
+              { "id": 302, 
+                "name": "We are sorry for not being able to meet your expectations. What went wrong?",
+                "header": "Faced issues ",
+                "noteText": "",
+                "questionType": "RADIO",
+                "displayOrder": 2,
+                "choices": [
+                  { "id": 206, "type": "radio", "name": "Related to Store or Billing",  "value": "1" },
+                  { "id": 207, "type": "radio", "name": "Related to items or stock",  "value": "2" },
+                  { "id": 208, "type": "radio", "name": "Related Staff or Service",  "value": "3" }
+                ],
+                "links": [
+                  { "id": 506, "value": "1", "linkedPage": 103},
+                  { "id": 507, "value": "2", "linkedPage": 106},
+                  { "id": 508, "value": "3", "linkedPage": 108}
+                ]
+              }
+            ]
+          },
+          {
+            "id": 103, "name": "Page 3", "header": "Page 3 Header", "text": "Page 3 Text", "footer": "Page 3 Footer", "final": false,
+            "questions": [
+              { "id": 303, 
+                "name": "",
+                "header": "More details",
+                "noteText": "",
+                "questionType": "RADIO",
+                "displayOrder": 3,
+                "choices": [
+                  { "id": 209, "type": "radio", "name": "The store was not clean",  "value": "1" },
+                  { "id": 210, "type": "radio", "name": "Parking not available",  "value": "2" },
+                  { "id": 211, "type": "radio", "name": "Problem with return policy",  "value": "3" },
+                  { "id": 212, "type": "radio", "name": "Poor checkout experience",  "value": "4" },
+                  { "id": 213, "type": "radio", "name": "Issues with billing",  "value": "5" }
+                ],
+                "links": [
+                  { "id": 509, "value": "1", "linkedPage": 105},
+                  { "id": 510, "value": "2", "linkedPage": 105},
+                  { "id": 511, "value": "3", "linkedPage": 105},
+                  { "id": 512, "value": "4", "linkedPage": 105},
+                  { "id": 513, "value": "5", "linkedPage": 105}
+                ]
+              },
+              { "id": 3031, 
+                "name": "",
+                "header": "Please tell us something we could do to improve our service",
+                "noteText": "",
+                "questionType": "TEXTAREA",
+                "displayOrder": 3
+                          }            
+            ]
+          },
+          {
+            "id": 105, "name": "Page 5", "header": "Page 5 Header", "text": "Page 5 Text", "footer": "Page 5 Footer", "final": true,
+            "questions": [
+              { "id": 305, 
+                "name": "Thank you for your valuable time.",
+                "header": "Your feedback has been registered and we are working to improve the experience for your next visit to EasyDay. Apologies once again for the inconvenience you faced. ",
+                "noteText": "",
+                "questionType": "NONE",
+                "displayOrder": 5,
+                "choices": [
+                ]
+              }
+            ]
+          },
+          {
+            "id": 106, "name": "Page 6", "header": "Page Header", "text": "Page Text", "footer": "Page Footer", "final": false,
+            "questions": [
+              { "id": 306, 
+                "name": "",
+                "header": "More details",
+                "noteText": "",
+                "questionType": "RADIO",
+                "displayOrder": 6,
+                "choices": [
+                  { "id": 214, "type": "radio", "name": "Lesser selection option",  "value": "1" },
+                  { "id": 215, "type": "radio", "name": "Items/product unavailable(No stock)",  "value": "2" },
+                  { "id": 216, "type": "radio", "name": "Stock not fresh / surpassed expiry date",  "value": "3" },
+                  { "id": 217, "type": "radio", "name": "No offers/unsuitable offers",  "value": "4" },
+                  { "id": 218, "type": "radio", "name": "Products/items are overpriced",  "value": "5" }
+                ],
+                "links": [
+                  { "id": 514, "value": "1", "linkedPage": 107},
+                  { "id": 515, "value": "2", "linkedPage": 107},
+                  { "id": 516, "value": "3", "linkedPage": 107},
+                  { "id": 517, "value": "4", "linkedPage": 107},
+                  { "id": 518, "value": "5", "linkedPage": 107}
+                ]
+              },
+              { "id": 3061, 
+                "name": "",
+                "header": "Please tell us something we could do to improve our service",
+                "noteText": "",
+                "questionType": "TEXTAREA",
+                "displayOrder": 3
+                          }
+            ]
+          },
+          {
+            "id": 107, "name": "Page 7", "header": "Page 5 Header", "text": "Page 5 Text", "footer": "Page 5 Footer", "final": true,
+            "questions": [
+              { "id": 307, 
+                "name": "Thank you for your valuable time.",
+                "header": "Your feedback has been registered and we are working to improve the experience for your next visit to EasyDay. Apologies once again for the inconvenience you faced. ",
+                "noteText": "",
+                "questionType": "NONE",
+                "displayOrder": 7,
+                "choices": [
+                ]
+              }
+            ]
+          },
+          {
+            "id": 108, "name": "Page 8", "header": "Page Header", "text": "Page Text", "footer": "Page Footer", "final": false,
+            "questions": [
+              { "id": 308, 
+                "name": "",
+                "header": "More details",
+                "noteText": "",
+                "questionType": "RADIO",
+                "displayOrder": 8,
+                "choices": [
+                  { "id": 219, "type": "radio", "name": "Unfriendly staff",  "value": "1" },
+                  { "id": 220, "type": "radio", "name": "Poor product knowledge",  "value": "2" },
+                  { "id": 221, "type": "radio", "name": "Slow service",  "value": "3" },
+                  { "id": 222, "type": "radio", "name": "Staff unavailable for assistance",  "value": "4" }
+                ],
+                "links": [
+                  { "id": 519, "value": "1", "linkedPage": 109},
+                  { "id": 520, "value": "2", "linkedPage": 109},
+                  { "id": 521, "value": "3", "linkedPage": 109},
+                  { "id": 522, "value": "4", "linkedPage": 109}
+                ]
+              },
+              { "id": 3081, 
+                "name": "",
+                "header": "Please tell us something we could do to improve our service",
+                "noteText": "",
+                "questionType": "TEXTAREA",
+                "displayOrder": 3
+                          }
+            ]
+          },
+          {
+            "id": 109, "name": "Page 9", "header": "Page 5 Header", "text": "Page 5 Text", "footer": "Page 5 Footer", "final": true,
+            "questions": [
+              { "id": 309, 
+                "name": "Thank you for your valuable time.",
+                "header": "Your feedback has been registered and we are working to improve the experience for your next visit to EasyDay. Apologies once again for the inconvenience you faced. ",
+                "noteText": "",
+                "questionType": "NONE",
+                "displayOrder": 9,
+                "choices": [
+                ]
+              }
+            ]
+          },
+          {
+            "id": 110, "name": "Page 10", "header": "Page Header", "text": "Page Text", "footer": "Page Footer", "final": false,
+            "questions": [
+              { "id": 310, 
+                "name": "We are glad you enjoyed the Easy Day experience. What did you like the most about it?",
+                "header": "",
+                "noteText": "",
+                "questionType": "CHECKBOX",
+                "displayOrder": 10,
+                "choices": [
+                  { "id": 223, "type": "checkbox", "name": "Wide range of product",  "value": "1" },
+                  { "id": 224, "type": "checkbox", "name": "Special offers",  "value": "2" },
+                  { "id": 225, "type": "checkbox", "name": "Convenient location",  "value": "3" },
+                  { "id": 226, "type": "checkbox", "name": "Convenient parking",  "value": "4" },
+                  { "id": 227, "type": "checkbox", "name": "Store is well laid out and clean",  "value": "5" },
+                  { "id": 228, "type": "checkbox", "name": "Employees are well informed, helpful and courteous",  "value": "6" }
+                ],
+                "links": [
+                  { "id": 523, "value": "1", "linkedPage": 111},
+                  { "id": 524, "value": "2", "linkedPage": 111},
+                  { "id": 525, "value": "3", "linkedPage": 111},
+                  { "id": 526, "value": "4", "linkedPage": 111},
+                  { "id": 527, "value": "5", "linkedPage": 111},
+                  { "id": 528, "value": "6", "linkedPage": 111} 
+                ]             
+              },
+              { "id": 3101, 
+                "name": "",
+                "header": "Is there something we can do to make your experience even better?",
+                "noteText": "",
+                "questionType": "TEXTAREA",
+                "displayOrder": 3
+                          }
+            ]
+          },
+          {
+            "id": 111, "name": "Page 11", "header": "Page Header", "text": "Page Text", "footer": "Page Footer", "final": true,
+            "questions": [
+              { "id": 311, 
+                "name": "Thank you for your feedback.",
+                "header": "We wish to keep delighting you at EasyDay!",
+                "noteText": "",
+                "questionType": "NONE",
+                "displayOrder": 11,
+                "choices": [
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

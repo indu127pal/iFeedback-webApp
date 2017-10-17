@@ -13,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className=".flex-auto">
         <Header title="Customer Feedback" />
         <Main loading={this.props.loading} />
       </div>

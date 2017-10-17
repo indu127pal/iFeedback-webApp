@@ -7,8 +7,8 @@ const Navigation = ({ getNextPage, final }) => {
 
   return(
   <div className="tc">
-    {!final && <button className="bg-blue pv2 ph5 bn br2 white tracked" type='submit'>Next</button>}
-    {final && <button className="bg-blue pv2 ph5 bn br2 white tracked" type='button' onClick={gotoFuturePage}>Finish</button>}
+    {!final && <button className="bg-app-dark-green pv2 ph5 bn br2 white tracked" type='submit'>Next</button>}
+    {final && <button className="bg-app-dark-green pv2 ph5 bn br2 white tracked" type='button' onClick={gotoFuturePage}>Finish</button>}
   </div>
   )
 };
