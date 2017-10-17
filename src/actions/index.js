@@ -6,7 +6,8 @@ export function fetchFeedback() {
 
 export function setAnswer(questionId, value) {
   return { 
-    type: constants.SET_ANSWER, payload: {
+    type: constants.SET_ANSWER, 
+    payload: {
       questionId: questionId,
       value: value
     } 

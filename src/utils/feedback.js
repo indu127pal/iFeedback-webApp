@@ -6,6 +6,7 @@ export const getNextPage = (feedback, currentPage, currentAnswers) => {
   let newPage = {}
   const pages = feedback.pages;
   const questions = currentPage.questions;
+  console.log(questions);
   for (let q of questions) {
     const links = q.links
     const k1 = currentAnswers.find(x => x.questionId === q.id)

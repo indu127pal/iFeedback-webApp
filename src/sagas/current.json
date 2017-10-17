@@ -1,0 +1,140 @@
+{
+    "id": 8,
+    "reviewDefinition":
+         { 
+            "status": true,
+            "customer":
+                {
+                     "phone": "9810962423", 
+                     "name": "sahnwaj  k"
+                },
+            "code": "EASYDAY_EXPERIENCE_FEEDBACK",
+            "name": "Easyday Experience Feedback", 
+            "businessId": 1, 
+            "description": "Easyday Experience Feedback", 
+            "categoryId": 1, 
+            "id": 5, 
+            "pages": 
+            [
+                {
+                    "pageId": 8, 
+                    "final": false,
+                    "start": true,
+                    "questions": 
+                    [
+                        {
+                            "questionType": "RADIO", 
+                            "code": "TI", 
+                            "mandatory": true, 
+                            "name": "Rate your last visit to  Easyday", 
+                            "choices": 
+                            [
+                                {
+                                    "name": "1", 
+                                    "imageUrl": null, 
+                                    "value": "1", 
+                                    "id": 17, 
+                                    "gotoPageId": 9, 
+                                    "description": "Bad"
+                                },
+                                {
+                                    "name": "2",
+                                    "imageUrl": null,
+                                    "value": "2",
+                                    "id": 18, 
+                                    "gotoPageId": 9, 
+                                    "description": "Average"
+                                }, 
+                                {
+                                    "name": "3",
+                                    "imageUrl": null,
+                                    "value": "3",
+                                    "id": 19,
+                                    "gotoPageId": null, 
+                                    "description": "OK"
+                                },
+                                {
+                                    "name": "4", 
+                                    "imageUrl": null, 
+                                    "value": "4", 
+                                    "id": 20, 
+                                    "gotoPageId": null, 
+                                    "description": "Good"
+                                },
+                                {
+                                    "name": "5",
+                                    "imageUrl": null, 
+                                    "value": "5", 
+                                    "id": 21, 
+                                    "gotoPageId": null, 
+                                    "description": "Excellent"
+                                }
+                            ],
+                            "header": "Easyday", 
+                            "id": 12, 
+                            "displayOrder": 1, 
+                            "description": "On a scale of 1-5, how was your last visit? (1-Bad, 5-Excellent)"
+                        }
+                    ]
+                },
+                {
+                    "pageId": 9, 
+                    "questions": 
+                    [
+                        {
+                            "questionType": "RADIO", 
+                            "code": "TI", 
+                            "mandatory": true, 
+                            "name": "Reason for bad experience",
+                            "choices": 
+                                [
+                                    {
+                                        "name": "Ambience",
+                                        "imageUrl": null,
+                                        "value": "Ambience",
+                                        "id": 22, 
+                                        "gotoPageId": null, 
+                                        "description": "Store Ambience"
+                                    }, 
+                                    {
+                                        "name": "Item Availability", 
+                                        "imageUrl": null, 
+                                        "value": "Item Availability",
+                                        "id": 23, 
+                                        "gotoPageId": null, 
+                                        "description": "Items not available"
+                                    }, 
+                                    { 
+                                        "name": "Item Quality", 
+                                        "imageUrl": null, 
+                                        "value": "Item Quality", 
+                                        "id": 24, 
+                                        "gotoPageId": null, 
+                                        "description": "Items are not of good quality"
+                                    },
+                                    {
+                                        "name": "Staff", 
+                                        "imageUrl": null, 
+                                        "value": "Staff", 
+                                        "id": 25, 
+                                        "gotoPageId": null, 
+                                        "description": "Staff behaviour was not Good"
+                                    }
+                                ], 
+                                "header": "Easyday", 
+                                "id": 13, 
+                                "displayOrder": 1, 
+                                "description": "What was the main reason for your bad experience?"
+                                }
+                            ]
+                        }
+                    ],
+                    "instructions": null
+                },
+    "txReferenceId": "784972201710082226053791",
+    "txType": "CUSTOMER_TRANSACTION",
+    "status": "INITIALIZED",
+    "code": "fa1d9dcc-36f4-4114-ade4-95c870ecb30e",
+    "reviewId": 5,
+    "participantId": 26
+}
