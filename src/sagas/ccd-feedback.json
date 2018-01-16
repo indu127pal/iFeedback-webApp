@@ -1,0 +1,46 @@
+{
+    "feedback":
+    {
+        "id": 54,
+        "txReferenceId": "1473012201710081239413482",
+        "txType": "CUSTOMER_TRANSACTION",
+        "status": "INITIALIZED",
+        "code": "2e935efa-1138-4b04-8b77-b165000303b4",
+        "reviewId": 1,
+        "participantId": 74,
+        "reviewDefinition": 
+            {
+            "customer": 
+                {
+                    "phone": "8872588898", 
+                    "name": "ajaypal singh"
+                },
+            "code": "1", 
+            "description": "Easyday Experience Feedback", 
+            "name": "Complete Transaction Feedback",
+            "categoryId": 1, 
+            "id": 1, 
+            "instructions": "", 
+            "questions": [
+                {   "id": 301, 
+                    "text": "Rate your experience with us",
+                    "questionType": "RATING",
+                    "parentQuestionId": "",
+                    "choices": [
+                        { "id": 201, "type": "radio", "name": "1",  "value": "1", "gotoQuestionId": "" },
+                        { "id": 202, "type": "radio", "name": "2",  "value": "2", "gotoQuestionId": "" },
+                        { "id": 203, "type": "radio", "name": "3",  "value": "3", "gotoQuestionId": "" },
+                        { "id": 204, "type": "radio", "name": "4",  "value": "4", "gotoQuestionId": "" },
+                        { "id": 205, "type": "radio", "name": "5",  "value": "5", "gotoQuestionId": "" }
+                    ]
+                },
+                {
+                    "questionType": "TEXTAREA", 
+                    "parentQuestionId": "",
+                    "text": "Please tell us something we could do to improve our service", 
+                    "id": 3031
+                }
+            ]
+        }
+    }
+}

@@ -3,8 +3,9 @@ import AnswerForm from '../../components/AnswerForm';
 import { setAnswer } from '../../actions';
 
 const mapDispatchToProps = dispatch => ({
-  onClick: (questionId, value) => {
-    dispatch(setAnswer(questionId, value));
+  onClick: (e,questionId, value, gotoId) => {
+    e.preventDefault()
+    dispatch(setAnswer(questionId, value, gotoId));
   },
 });
 

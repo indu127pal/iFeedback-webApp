@@ -1,20 +1,20 @@
-import React, { PropTypes } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PageFormContainer from '../../containers/PageFormContainer';
+import FeedbackContainer from '../../containers/FeedbackContainer';
 import LoaderHOC from '../../HOC/LoaderHOC';
 
-const Main = ({ checkAnswer }) => (
-  <div className="pa2 mt4 tracked">
-    <PageFormContainer/>
-  </div>
-);
-
-Main.propTypes = {
-  checkAnswer: PropTypes.bool,
-};
+class Main extends Component {
+  render() {
+      return (
+        <div className="">
+            <FeedbackContainer />
+        </div>
+      )
+    }
+}
 
 const mapStateToProps = state => ({
-  checkAnswer: state.feedback.checkAnswer,
+  
 });
 
 export default LoaderHOC(connect(mapStateToProps)(Main));
