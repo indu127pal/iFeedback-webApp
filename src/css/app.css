@@ -1,3 +1,71 @@
 @import "tachyons";
-.bg-app-green { background-color: #A8C700; }
-.bg-app-dark-green { background-color: #034638; }
+
+.bg-app-dark-green { background-color: #173028; }
+.bg-app-brand-accent2 { background-color: #174b37; }
+.bg-app-brand-accent1 { background-color: #a8c700; }
+.bg-app-faint-green { background-color: #ecffdc; }
+.app-grey { color: #b3b3b3; }
+.app-b-grey { border-color: #b3b3b3; }
+.app-bottom-border { border: none; border-bottom: 2px solid #b3b3b3;}
+
+.textarea{  
+  /* box-sizing: padding-box; */
+  overflow:hidden;
+  /* demo only: */
+  padding-left: 10px;
+  width: 100%;
+  height: 24px;
+  margin:30px auto;
+  display:block;
+  outline:none;
+  border:none;
+  border-bottom:2px solid #b3b3b3;
+}
+
+/* fontSize */
+.H-big { font-size: 8.375rem; }
+.H1 { font-size: 3rem; }
+.H2 { font-size: 2.25rem; }
+.f-4 { font-size: 4rem; }
+
+.app-h1 { height: 1.5rem; }
+.app-h2 { height: 3rem; }
+.app-h6 { height: 6rem; }
+.app-h10 { height: 10rem; }
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+  }
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('/assets/fonts/Roboto-Medium.ttf') format('truetype');
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto-Italic';
+    src: url('/assets/fonts/Roboto-Italic.ttf') format('truetype');
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('/assets/fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-style: italic;
+  }
+/* Roboto fonts */
+.roboto-regular { font-family: Roboto-Regular; }
+.roboto-bold { font-family: Roboto-Bold; }
+.roboto-medium { font-family: Roboto-Medium; }
+.roboto-italic { font-family: Roboto-Italic; }
+.roboto-lightItalic { font-family: Roboto-LightItalic; }

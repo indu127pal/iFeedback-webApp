@@ -1,0 +1,123 @@
+{
+    "name": "New EasyDay Customer Feedback",
+    "code": "NEW_EASYDAY_CUSTOMER_FEEDBACK",
+    "description": "Customer Feedback for EasyDay customers. Feedback link will be sent based on the last transaction done at the EasyDay store.",
+    "status": true,
+    "instructions": null,
+    "businessId": 1,
+    "categoryId": 1,
+    "definition": {
+        "questions": [
+            {   
+                "questionType": "BOOLEAN",
+                "start": true,
+                "text": "How was your experience.",
+                "parentQuestionId": "", 
+                "choices": [
+                    {
+                        "name": "Poor",
+                        "image": "/assets/images/Poor.png", 
+                        "type": "radio", 
+                        "gotoQuestionId": "9102", 
+                        "value": "1", 
+                        "id": 9202
+                    }, 
+                    {
+                        "name": "Average", 
+                        "image": "/assets/images/Good.png", 
+                        "type": "radio", 
+                        "gotoQuestionId": "9102", 
+                        "value": "2", 
+                        "id": 9203
+                    }, 
+                    {
+                        "name": "Excellent", 
+                        "image": "/assets/images/Excellent.png", 
+                        "type": "radio", 
+                        "gotoQuestionId": "9110", 
+                        "value": "3", 
+                        "id": 9205
+                    }
+                    ],
+                "id": 9301
+            },
+            {
+                "questionType": "RADIO", 
+                "parentQuestionId": "",
+                "text": "Where do you think we can improve?", 
+                "choices": [
+                    {"name": "Store and Billing", "type": "radio", "gotoQuestionId": "9103", "value": "1", "id": 9206}, 
+                    {"name": "Items and Stock", "type": "radio", "gotoQuestionId": "9106", "value": "2", "id": 9207}, 
+                    {"name": "Service and Staff", "type": "radio", "gotoQuestionId": "9107", "value": "3", "id": 9208}
+                    ],
+                "id": 9102
+            },
+            {
+                "questionType": "CHECKBOX", 
+                "parentQuestionId": "",
+                "text": "Where do you think we can improve in Store?", 
+                "choices": [
+                    {"name": "The Store was not clean", "type": "radio", "gotoQuestionId": "9105", "value": "1", "id": 9209}, 
+                    {"name": "Parking not available", "type": "radio", "gotoQuestionId": "9105", "value": "2", "id": 9210}, 
+                    {"name": "Problem with return policy", "type": "radio", "gotoQuestionId": "9105", "value": "3", "id": 9211}, 
+                    {"name": "Poor checkout experience", "type": "radio", "gotoQuestionId": "9105", "value": "4", "id": 9212}, 
+                    {"name": "Issues with billing", "type": "radio", "gotoQuestionId": "9105", "value": "5", "id": 9213}
+                    ], 
+                "id": 9103
+            },
+            {
+                "questionType": "CHECKBOX", 
+                "parentQuestionId": "", 
+                "text": "Where do you think we can improve in Stock?",
+                "choices": [
+                    {"name": "Lesser selection option", "type": "radio", "gotoQuestionId": "9105", "value": "1", "id": 9214}, 
+                    {"name": "Items/product unavailable(No stock)", "type": "radio", "gotoQuestionId": "9105", "value": "2", "id": 9215}, 
+                    {"name": "Stock not fresh/surpassed expiry date", "type": "radio", "gotoQuestionId": "9105", "value": "3", "id": 9216}, 
+                    {"name": "No offers/unsuitable offers", "type": "radio", "gotoQuestionId": "9105", "value": "4", "id": 9217}, 
+                    {"name": "Products/Items are overpriced", "type": "radio", "gotoQuestionId": "9105", "value": "5", "id": 9218}
+                ], 
+                "id": 9106
+            },
+            {
+                "questionType": "CHECKBOX",
+                "parentQuestionId": "", 
+                "text": "Where do you think we can improve in Service?",
+                "choices": [
+                    {"name": "Unfriendly staff", "type": "radio", "gotoQuestionId": "9105", "value": "1", "id": 9219}, 
+                    {"name": "Poor product knowledge", "type": "radio", "gotoQuestionId": "9105", "value": "2", "id": 9220}, 
+                    {"name": "Slow service", "type": "radio", "gotoQuestionId": "9105", "value": "3", "id": 9221}, 
+                    {"name": "Staff unavailable for assistance", "type": "radio", "gotoQuestionId": "9105", "value": "4", "id": 9222}
+                ], 
+                "id": 9107
+            },
+            {
+                "questionType": "CHECKBOX",
+                "parentQuestionId": "",
+                "text": "What are you like?",
+                "choices": [
+                    {"name": "Wide range of product", "type": "checkbox", "gotoQuestionId": "9111", "value": "1", "id": 9223}, 
+                    {"name": "Special offers", "type": "checkbox", "gotoQuestionId": "9111", "value": "2", "id": 9224}, 
+                    {"name": "Convenient location", "type": "checkbox", "gotoQuestionId": "9111", "value": "3", "id": 9225}, 
+                    {"name": "Convenient parking", "type": "checkbox", "gotoQuestionId": "9111", "value": "4", "id": 9226}, 
+                    {"name": "Store is well laid out and clean", "type": "checkbox", "gotoQuestionId": "9111", "value": "5", "id": 9227}, 
+                    {"name": "Employees are helpful and courteous", "type": "checkbox", "gotoQuestionId": "9111", "value": "6", "id": 9228}
+                ], 
+                "id": 9110
+            },
+            {
+                "questionType": "TEXTAREA",
+                "parentQuestionId": "",
+                "name": "Thank you for your time.",
+                "text": "Your feedback is valuable and we are committed to improve the experience for your next visit to EasyDay.", 
+                "id": 9105
+            },
+            {
+                "questionType": "TEXTAREA",
+                "parentQuestionId": "", 
+                "name": "Thank you for your time.",
+                "text": "We wish to keep delighting you at EasyDay!", 
+                "id": 9111
+            }
+        ]
+    }
+}

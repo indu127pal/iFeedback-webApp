@@ -4,16 +4,12 @@ import Radio from '../Radio'
 import Checkbox from '../Checkbox'
 import Textarea from '../Textarea'
 
-const Answer = ({ question, answer, onClick }) => {
+const Answer = ({ question, submitFeedback }) => {
   switch(question.questionType) {
-    case 'RATING': 
-      return (<Rating choices={question.choices} answer={answer} id={question.id} onClick={onClick}/>)
     case 'RADIO': 
-      return (<Radio choices={question.choices} answer={answer} id={question.id} onClick={onClick}/>)
+      return (<Radio choices={question.choices} id={question.id} submitFeedback={submitFeedback}/>)
     case 'CHECKBOX': 
-      return (<Checkbox choices={question.choices} answer={answer} id={question.id} onClick={onClick}/>)
-    case 'TEXTAREA': 
-      return (<Textarea answer={answer} id={question.id} onChange={onClick}/>)
+      return (<Checkbox choices={question.choices}  id={question.id} submitFeedback={submitFeedback}/>)
     default: 
       return (<div></div>)
   }
@@ -21,8 +17,7 @@ const Answer = ({ question, answer, onClick }) => {
 
 Answer.propTypes = {
   question: PropTypes.object.isRequired,
-  answer: PropTypes.object.isRequired,
-  onClick: PropTypes.func.isRequired,
+  // onClick: PropTypes.func.isRequired,
 };
 
 export default Answer;

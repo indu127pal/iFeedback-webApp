@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchFeedback } from '../../actions'
-
-import Header from '../Header';
-import Main from '../Main';
 import './app.css'
+import Main from '../Main';
+import { fetchFeedback } from '../../actions'
 
 class App extends Component {
   componentWillMount() {
     this.props.dispatch(fetchFeedback());
   }
-
+  componentDidMount() {
+    window.scrollTo(0,5);
+  }
   render() {
-    return (
-      <div className=".flex-auto">
-        <Header title="Customer Feedback" />
-        <Main loading={this.props.loading} />
-      </div>
+    return (        
+        <div className="">
+          <Main loading={this.props.loading} />
+        </div>
     );
   }
 }

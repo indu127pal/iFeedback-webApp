@@ -1,140 +1,271 @@
 {
-    "id": 8,
-    "reviewDefinition":
-         { 
-            "status": true,
-            "customer":
-                {
-                     "phone": "9810962423", 
-                     "name": "sahnwaj  k"
-                },
-            "code": "EASYDAY_EXPERIENCE_FEEDBACK",
-            "name": "Easyday Experience Feedback", 
-            "businessId": 1, 
-            "description": "Easyday Experience Feedback", 
-            "categoryId": 1, 
-            "id": 5, 
-            "pages": 
-            [
-                {
-                    "pageId": 8, 
+    "feedback":
+    [
+        {
+            "id": 54,
+            "reviewDefinition": 
+            {
+              "status": "Active",
+              "customer": 
+                  {
+                      "phone": "8872588898", 
+                      "name": "ajaypal singh"
+                  },
+              "code": "4", 
+              "description": "Easyday Experience Feedback", 
+              "categoryId": 1, 
+              "id": 4, 
+              "instructions": "Please complete the rating for the last transaction at Store 010010", 
+              "ratings":[
+                  {
+                    "greeting": "Dear", 
                     "final": false,
-                    "start": true,
-                    "questions": 
-                    [
-                        {
-                            "questionType": "RADIO", 
-                            "code": "TI", 
-                            "mandatory": true, 
-                            "name": "Rate your last visit to  Easyday", 
-                            "choices": 
-                            [
-                                {
-                                    "name": "1", 
-                                    "imageUrl": null, 
-                                    "value": "1", 
-                                    "id": 17, 
-                                    "gotoPageId": 9, 
-                                    "description": "Bad"
-                                },
-                                {
-                                    "name": "2",
-                                    "imageUrl": null,
-                                    "value": "2",
-                                    "id": 18, 
-                                    "gotoPageId": 9, 
-                                    "description": "Average"
-                                }, 
-                                {
-                                    "name": "3",
-                                    "imageUrl": null,
-                                    "value": "3",
-                                    "id": 19,
-                                    "gotoPageId": null, 
-                                    "description": "OK"
-                                },
-                                {
-                                    "name": "4", 
-                                    "imageUrl": null, 
-                                    "value": "4", 
-                                    "id": 20, 
-                                    "gotoPageId": null, 
-                                    "description": "Good"
-                                },
-                                {
-                                    "name": "5",
-                                    "imageUrl": null, 
-                                    "value": "5", 
-                                    "id": 21, 
-                                    "gotoPageId": null, 
-                                    "description": "Excellent"
-                                }
-                            ],
-                            "header": "Easyday", 
-                            "id": 12, 
-                            "displayOrder": 1, 
-                            "description": "On a scale of 1-5, how was your last visit? (1-Bad, 5-Excellent)"
-                        }
-                    ]
-                },
-                {
-                    "pageId": 9, 
-                    "questions": 
-                    [
-                        {
-                            "questionType": "RADIO", 
-                            "code": "TI", 
-                            "mandatory": true, 
-                            "name": "Reason for bad experience",
-                            "choices": 
-                                [
-                                    {
-                                        "name": "Ambience",
-                                        "imageUrl": null,
-                                        "value": "Ambience",
-                                        "id": 22, 
-                                        "gotoPageId": null, 
-                                        "description": "Store Ambience"
-                                    }, 
-                                    {
-                                        "name": "Item Availability", 
-                                        "imageUrl": null, 
-                                        "value": "Item Availability",
-                                        "id": 23, 
-                                        "gotoPageId": null, 
-                                        "description": "Items not available"
-                                    }, 
-                                    { 
-                                        "name": "Item Quality", 
-                                        "imageUrl": null, 
-                                        "value": "Item Quality", 
-                                        "id": 24, 
-                                        "gotoPageId": null, 
-                                        "description": "Items are not of good quality"
-                                    },
-                                    {
-                                        "name": "Staff", 
-                                        "imageUrl": null, 
-                                        "value": "Staff", 
-                                        "id": 25, 
-                                        "gotoPageId": null, 
-                                        "description": "Staff behaviour was not Good"
-                                    }
-                                ], 
-                                "header": "Easyday", 
-                                "id": 13, 
-                                "displayOrder": 1, 
-                                "description": "What was the main reason for your bad experience?"
-                                }
-                            ]
-                        }
-                    ],
-                    "instructions": null
-                },
-    "txReferenceId": "784972201710082226053791",
-    "txType": "CUSTOMER_TRANSACTION",
-    "status": "INITIALIZED",
-    "code": "fa1d9dcc-36f4-4114-ade4-95c870ecb30e",
-    "reviewId": 5,
-    "participantId": 26
-}
+                    "name": "Thank you for visiting EasyDay. Your valuable feedback constantly help us improve our delivery and provide you with the best possible service on your next visit. We promise it won't take longer. Let's get started...", 
+                    "noteText": "(1 being very poor and 5 being very good)", 
+                    "choices": [
+                        {"name": "Very Poor", "image": "/assets/images/feed_1.jpg", "value": "1", "id": 9201, "type": "radio", "gotoPageId": "9102"}, 
+                        {"name": "Poor", "image": "/assets/images/feed_2.jpg", "value": "2", "id": 9202, "type": "radio", "gotoPageId": "9102"}, 
+                        {"name": "Average", "image": "/assets/images/feed_3.jpg", "value": "3", "id": 9203, "type": "radio", "gotoPageId": "9102"}, 
+                        {"name": "Good", "image": "/assets/images/feed_4.jpg", "value": "4", "id": 9204, "type": "radio", "gotoPageId": "9110"}, 
+                        {"name": "Excellent", "image": "/assets/images/feed_5.jpg", "value": "5", "id": 9205, "type": "radio", "gotoPageId": "9110"}
+                        ],
+                    "header": "How do you rate your experience today on the scale of 1 to 5", 
+                    "id": 9301, 
+                    "displayOrder": 1,
+                    "pages": [
+                      {
+                          "name": "Page 2",
+                          "footer": "Page 2 Footer", 
+                          "text": "Page 2 Text", 
+                          "final": false, 
+                          "header": "Page 2 Header", 
+                          "questions": [
+                              {
+                                  "questionType": "RADIO", 
+                                  "name": "", 
+                                  "noteText": "", 
+                                  "choices": [
+                                      {"name": "Related to Store or Billing", "type": "radio", "gotoPageId": "9103", "value": "1", "id": 9206}, 
+                                      {"name": "Related to items or stock", "type": "radio", "gotoPageId": "9106", "value": "2", "id": 9207}, 
+                                      {"name": "Related Staff or Service", "type": "radio", "gotoPageId": "9108", "value": "3", "id": 9208}
+                                      ], 
+                                  "header": "Faced issues ", 
+                                  "id": 9302, 
+                                  "displayOrder": 2
+                              }
+                          ],"id": 9102
+                      }, 
+                      {
+                          "name": "Page 3", 
+                          "footer": "Page 3 Footer", 
+                          "text": "Page 3 Text", 
+                          "final": false, 
+                          "header": "Page 3 Header", 
+                          "questions": [
+                              {
+                                  "questionType": "RADIO", 
+                                  "name": "", 
+                                  "noteText": "", 
+                                  "choices": [
+                                      {"name": "The store was not clean", "type": "radio", "gotoPageId": "9105", "value": "1", "id": 9209}, 
+                                      {"name": "Parking not available", "type": "radio", "gotoPageId": "9105", "value": "2", "id": 9210}, 
+                                      {"name": "Problem with return policy", "type": "radio", "gotoPageId": "9105", "value": "3", "id": 9211}, 
+                                      {"name": "Poor checkout experience", "type": "radio", "gotoPageId": "9105", "value": "4", "id": 9212}, 
+                                      {"name": "Issues with billing", "type": "radio", "gotoPageId": "9105", "value": "5", "id": 9213}
+                                      ], 
+                                  "header": "More details", 
+                                  "id": 9303, 
+                                  "displayOrder": 3
+                              }, 
+                              {
+                                  "questionType": "TEXTAREA", 
+                                  "name": "", "noteText": "", 
+                                  "header": "Leave a comment(optional)", 
+                                  "id": 3031, 
+                                  "displayOrder": 3
+                              }
+                          ],"id": 9103
+                      }, 
+                      {
+                          "name": "Page 5", 
+                          "footer": "Page 5 Footer", 
+                          "text": "Page 5 Text", 
+                          "final": true, 
+                          "header": "Page 5 Header", 
+                          "questions": [
+                              {
+                                  "questionType": "NONE", 
+                                  "name": "Thank you for your valuable time.", 
+                                  "noteText": "", 
+                                  "choices": [], 
+                                  "header": "Your feedback has been registered and we are working to improve the experience for your next visit to EasyDay. Apologies once again for the inconvenience you faced. ", 
+                                  "id": 9305, 
+                                  "displayOrder": 5
+                              }
+                          ], 
+                          "id": 9105
+                      }, 
+                      {
+                          "name": "Page 6", 
+                          "footer": "Page Footer", 
+                          "text": "Page Text", 
+                          "final": false, 
+                          "header": "Page Header", 
+                          "questions": [
+                              {
+                                  "questionType": "RADIO", 
+                                  "name": "", 
+                                  "noteText": "", 
+                                  "choices": [
+                                      {"name": "Lesser selection option", "type": "radio", "gotoPageId": "9107", "value": "1", "id": 9214}, 
+                                      {"name": "Items/product unavailable(No stock)", "type": "radio", "gotoPageId": "9107", "value": "2", "id": 9215}, 
+                                      {"name": "Stock not fresh / surpassed expiry date", "type": "radio", "gotoPageId": "9107", "value": "3", "id": 9216}, 
+                                      {"name": "No offers/unsuitable offers", "type": "radio", "gotoPageId": "9107", "value": "4", "id": 9217}, 
+                                      {"name": "Products/items are overpriced", "type": "radio", "gotoPageId": "9107", "value": "5", "id": 9218}
+                                  ], 
+                                  "header": "More details", 
+                                  "id": 9306, 
+                                  "displayOrder": 6
+                              }, 
+                              {
+                                  "questionType": "TEXTAREA", 
+                                  "name": "", 
+                                  "noteText": "", 
+                                  "header": "Leave a comment(optional)", 
+                                  "id": 3061, "displayOrder": 3
+                              }
+                          ], 
+                          "id": 9106
+                      }, 
+                      {
+                          "name": "Page 7", 
+                          "footer": "Page 5 Footer", 
+                          "text": "Page 5 Text", 
+                          "final": true, 
+                          "header": "Page 5 Header", 
+                          "questions": [
+                              {
+                                  "questionType": "NONE", 
+                                  "name": "Thank you for your valuable time.", 
+                                  "noteText": "",
+                                  "choices": [], 
+                                  "header": "Your feedback has been registered and we are working to improve the experience for your next visit to EasyDay. Apologies once again for the inconvenience you faced. ", 
+                                  "id": 9307, 
+                                  "displayOrder": 7
+                              }
+                          ], 
+                          "id": 9107
+                      }, 
+                      {
+                          "name": "Page 8", 
+                          "footer": "Page Footer", 
+                          "text": "Page Text", 
+                          "final": false, 
+                          "header": "Page Header", 
+                          "questions": 
+                          [
+                              {
+                                  "questionType": "RADIO", 
+                                  "name": "", 
+                                  "noteText": "", 
+                                  "choices": [
+                                      {"name": "Unfriendly staff", "type": "radio", "gotoPageId": "9109", "value": "1", "id": 9219}, 
+                                      {"name": "Poor product knowledge", "type": "radio", "gotoPageId": "9109", "value": "2", "id": 9220}, 
+                                      {"name": "Slow service", "type": "radio", "gotoPageId": "9109", "value": "3", "id": 9221}, 
+                                      {"name": "Staff unavailable for assistance", "type": "radio", "gotoPageId": "9109", "value": "4", "id": 9222}
+                                  ], 
+                                  "header": "More details", 
+                                  "id": 9308, 
+                                  "displayOrder": 8}, 
+                                  {
+                                      "questionType": "TEXTAREA", 
+                                      "name": "", 
+                                      "noteText": "", 
+                                      "header": "Leave a comment(optional)", 
+                                      "id": 3081, 
+                                      "displayOrder": 3
+                                  }
+                          ], "id": 9108
+                      }, 
+                      {
+                          "name": "Page 9", 
+                          "footer": "Page 5 Footer", 
+                          "text": "Page 5 Text", 
+                          "final": true, 
+                          "header": "Page 5 Header", 
+                          "questions": [
+                              {
+                                  "questionType": "NONE", 
+                                  "name": "Thank you for your valuable time.", 
+                                  "noteText": "", 
+                                  "choices": [], 
+                                  "header": "Your feedback has been registered and we are working to improve the experience for your next visit to EasyDay. Apologies once again for the inconvenience you faced. ", 
+                                  "id": 9309, 
+                                  "displayOrder": 9
+                              }
+                          ], "id": 9109
+                      }, 
+                      {
+                          "name": "Page 10", 
+                          "footer": "Page Footer", 
+                          "text": "Page Text", 
+                          "final": false, 
+                          "header": "Page Header", 
+                          "questions": [
+                              {
+                                  "questionType": "CHECKBOX", 
+                                  "name": "", 
+                                  "noteText": "", 
+                                  "choices": [
+                                      {"name": "Wide range of product", "type": "checkbox", "gotoPageId": "9111", "value": "1", "id": 9223}, 
+                                      {"name": "Special offers", "type": "checkbox", "gotoPageId": "9111", "value": "2", "id": 9224}, 
+                                      {"name": "Convenient location", "type": "checkbox", "gotoPageId": "9111", "value": "3", "id": 9225}, 
+                                      {"name": "Convenient parking", "type": "checkbox", "gotoPageId": "9111", "value": "4", "id": 9226}, 
+                                      {"name": "Store is well laid out and clean", "type": "checkbox", "gotoPageId": "9111", "value": "5", "id": 9227}, 
+                                      {"name": "Employees are well informed, helpful and courteous", "type": "checkbox", "gotoPageId": "9111", "value": "6", "id": 9228}
+                                  ], 
+                                  "header": "", 
+                                  "id": 9310, 
+                                  "displayOrder": 10
+                              }, {
+                                  "questionType": "TEXTAREA", 
+                                  "name": "", 
+                                  "noteText": "", 
+                                  "header": "Leave a comment(optional)", 
+                                  "id": 3101, 
+                                  "displayOrder": 3
+                                  }
+                          ], "id": 9110
+                      }, 
+                      {
+                          "name": "Page 11", 
+                          "footer": "Page Footer", 
+                          "text": "Page Text", 
+                          "final": true, 
+                          "header": "Page Header", 
+                          "questions": [
+                              {
+                                  "questionType": "NONE", 
+                                  "name": "Thank you for your feedback.", 
+                                  "noteText": "", 
+                                  "choices": [], 
+                                  "header": "We wish to keep delighting you at EasyDay!", 
+                                  "id": 9311, 
+                                  "displayOrder": 11
+                              }
+                          ], "id": 9111
+                      }
+                  ] 
+                  }
+              ],
+              "name": "Customer Feedback"
+            },
+            "txReferenceId": "1473012201710081239413482",
+            "txType": "CUSTOMER_TRANSACTION",
+            "status": "INITIALIZED",
+            "code": "2e935efa-1138-4b04-8b77-b165000303b4",
+            "reviewId": 4,
+            "participantId": 74
+        }
+    ]
+  }

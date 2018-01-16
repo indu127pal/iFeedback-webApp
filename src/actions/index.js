@@ -3,22 +3,34 @@ import * as constants from '../constants';
 export function fetchFeedback() {
   return { type: constants.FETCH_FEEDBACK };
 }
-
-export function setAnswer(questionId, value) {
-  return { 
-    type: constants.SET_ANSWER, 
-    payload: {
-      questionId: questionId,
-      value: value
-    } 
-  };
+export function submitFeedback() {
+  return { type: constants.SUBMIT_REVIEW };
 }
 
-export function getNextPage(values) {
+export function setPage(newId) {
   return { 
-    type: constants.GET_NEXT_PAGE,
+    type: constants.SET_PAGE,
     payload: {
-      form_values: values 
+      newId: newId
     }
-  };
+  }
 }
+export function setTransition(newPageId) {
+  return {
+    type: constants.SET_TRANSITION,
+    payload: {
+      newPageId: newPageId
+    }
+  }
+}
+
+// export function setAnswer(questionId, value, gotoId) {
+//   return { 
+//     type: constants.SET_ANSWER, 
+//     payload: {
+//       questionId: questionId,
+//       value: value,
+//       gotoId: gotoId
+//     } 
+//   };
+// }

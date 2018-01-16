@@ -4,10 +4,10 @@ const Textarea = ({ id, answer, onChange }) => {
   console.log(answer)
   return(
   <div className="">
-    <textarea className="w-100 br2 b--light-gray gray" rows="4" value={answer.value} name={id} onChange={ 
+    <textarea className="w-100 br2 b--light-gray gray roboto-regular" rows="4" name={id} onChange={ 
       (e) => { 
           console.log(e)
-          onChange(id, e.target.value)
+          onChange(id, e.target.value, null)
         }
       }></textarea>
   </div>

@@ -1,27 +1,43 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes, Component } from 'react';
 import QuestionContainer from '../../containers/QuestionContainer'
-import NavigationContainer from '../../containers/NavigationContainer'
+import BackButtonContainer from '../../containers/BackButtonContainer'
 
-const Page = ({ page, answers, getNextPage }) => {
-  const questions = page.questions
-  const getAnswer = (q) => {
-    const a = answers.find(x => x.questionId===q.id)
-    return a
+class Page extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      Id : null
+    }
   }
-  return(
-  <div className="">
-    { questions.map( q => (
-      <QuestionContainer key={q.id} question={q} answer={getAnswer(q)}/>
-    ))}
-    <NavigationContainer getNextPage={getNextPage} final={page.final} />
-  </div>
-  )
-};
+  componentWillMount() {
+    let loc = location.hash
+    if (!loc) { loc = location.pathname.replace('#', '') }
+    else { loc.replace('#', '') }
+    const id = loc.split("/page/")
+    let newId = id[1];
+    this.props.onPageMount(newId);  
+  }
+  
+  render() {
+    // const { feedback, question } = this.props
+    return(  
+      <div className="">
+      <BackButtonContainer option="true" />
+      <div className="bg-app-brand-accent1 app-h2 w-100 tc">
+        <h4 className="mt0 f3 pt2 roboto-italic">2 Quick questions</h4>
+      </div>
+      {
+        <QuestionContainer /> 
+      }
+      </div>
+    )
+  }
+}
 
 Page.propTypes = {
-  page: PropTypes.object.isRequired,
-  answers: PropTypes.array.isRequired,
-  getNextPage: PropTypes.func.isRequired,
+  // feedback: PropTypes.object.isRequired,
+  // question: PropTypes.object,
+  // setPage: PropTypes.func.isRequired
 };
 
 export default Page;
